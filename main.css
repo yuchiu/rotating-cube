@@ -56,6 +56,9 @@ button:focus {
 #picture-container:hover {
     transform: rotateY(-270deg) translate3d(20px, -20px, 12px) scale(1.2, 1.2);
 }
+#picture-container:active {
+    transform: rotateY(-20deg) translate3d(200px, -20px, 20px) scale(1.2, 1.2);
+}
 
 .side{
     width: 100%;
