@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>3D Transform Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+	<h1>Rotating Cube</h1>
+	<div class="cube-container">
+		<div class="" id="picture-container">
+			<img class="front side" src="img/photos/einstein.jpg" alt="einstein">
+			<img class="left side" src="img/photos/schrodinger.jpg" alt="schrodinger">
+			<img class="right side" src="img/photos/feynman.jpg" alt="feynman">
+			<img class="back side" src="img/photos/sagan.jpg" alt="sagan">
+		</div>
+
+	</div>
+	<div class="button-div">
+		<button class="button" id="autoRotate">rotate</button>
+	</div>
+	<script type='text/javascript'>
+		let rotating = false;
+		document.getElementById('autoRotate').addEventListener('click', function () {
+			if (!rotating) {
+				document.getElementById('picture-container').classList.add('autoRotate');
+				autoRotate.innerHTML = 'Stop';
+				rotating = true;
+			} else if (rotating) {
+				document.getElementById('picture-container').classList.remove('autoRotate');
+				autoRotate.innerHTML = 'rotate';
+				rotating = false;
+			}
+		})
+	</script>
+</body>
+
+</html>
